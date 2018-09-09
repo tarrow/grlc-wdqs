@@ -1,0 +1,8 @@
+#+ summary: Get the value of a given identifier given a Q number
+#+ endpoint: https://query.wikidata.org/sparql
+#+ tags:
+#+   - wikidata
+#+ method: GET
+#+ pagination: 50
+
+select distinct ?Identifier where {?_q ?_p ?Identifier}
